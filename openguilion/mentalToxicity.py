@@ -103,8 +103,8 @@ def mentalToxicity(animTime):
 	pil_image = Image.frombytes("RGBA", (_.w, _.h), pil_string_image)
 	draw = ImageDraw.Draw(pil_image)
 	blurred = pil_image.filter(ImageFilter.BoxBlur(5))
-	py_text = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
-	_.screen.blit(py_text, (0, 0, 0, 0))
+	blurred = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
+	_.screen.blit(blurred, (0, 0, 0, 0))
 	_.screen.blit(surfaceMentalToxicity, (0, 0))
 
 	if animTime >= 5:

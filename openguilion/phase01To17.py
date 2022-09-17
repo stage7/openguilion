@@ -103,8 +103,8 @@ def phase01To17(animTime):
 	pil_image = Image.frombytes("RGBA", (_.w, _.h), pil_string_image)
 	draw = ImageDraw.Draw(pil_image)
 	blurred = pil_image.filter(ImageFilter.BoxBlur(3))
-	py_text = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
-	_.screen.blit(py_text, (0, 0, 0, 0))
+	blurred = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
+	_.screen.blit(blurred, (0, 0, 0, 0))
 	_.screen.blit(surfacePhase01to17, (0, 0))
 
 	if animTime >= 10:

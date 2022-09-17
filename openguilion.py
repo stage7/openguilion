@@ -4,6 +4,7 @@ from openguilion.caseResolution import *
 from openguilion.phase01To17 import *
 from openguilion.lost import *
 from openguilion.mentalToxicity import *
+from openguilion.stateEmergency import *
 
 def main():
 	running = True
@@ -12,7 +13,7 @@ def main():
 	curTime = startDate
 	animIndex = 0
 	animTime = 0
-	animations = [intruderAlert, caseResolution, mentalToxicity, lost, phase01To17]
+	animations = [stateEmergency, intruderAlert, caseResolution, mentalToxicity, lost, phase01To17]
 
 	while running:
 		for event in pygame.event.get():

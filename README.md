@@ -1,5 +1,5 @@
 
-# OpenGUIlion v1.0
+# About OpenGUIlion
 
 OpenGUIlion is a very basic application written in Python that only does one thing: it shows non-interactive, animated GUIs from the "Evangelion" franchise.
 
@@ -10,9 +10,9 @@ OpenGUIlion is a very basic application written in Python that only does one thi
 
 ## Requirements
 
-To run OpenGUIlion you need Python 3 with PyGame and PIL available. Most distros already include them.
+To run OpenGUIlion you need Python 3 with PyGame and PIL available. Some distros already include them, but in case yours doesn't you can easily install them through `pip`.
 
-You also need some fonts that must be placed under the `/openguilion/fonts/` folder and cannot be included in the repo for copyright reasons. How to get them is up to you and I will not provide further instructions nor direct downloads.
+You also need some extra fonts that must be placed under the `/openguilion/fonts/` folder and cannot be included in the repo for copyright reasons, whereas others can. How to get the copyrighted fonts is up to you and I will not provide further instructions nor direct downloads.
 
 - Obtain "Helvetica Narrow Bold Regular" and name it `helvet.ttf`.
 - Obtain "Helvetica Bold" and name it `helvetb.ttf`.
@@ -41,8 +41,10 @@ This software is distributed under a [GPL 3.0 license](https://opensource.org/li
 
 ## Disclaimer
 
-All names are trademarks of their respective owners and are use here under fair use.
+All names are trademarks of their respective owners and are used here under fair use.
 
 - "Evangelion" is a trademark of Gainax Corporation and Khara Inc.
 - "Helvetica" is a trademark of Monotype Imaging Inc.
 - "ITC Matisse®" is a trademark of Monotype ITC Inc.
+
+Sinkin Sans is used under an [Apache License](https://www.fontsquirrel.com/license/sinkin-sans).

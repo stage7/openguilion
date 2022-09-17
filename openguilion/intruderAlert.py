@@ -96,9 +96,9 @@ def intruderAlert(animTime):
 	pil_image = Image.frombytes("RGBA", (_.w, _.h), pil_string_image)
 	draw = ImageDraw.Draw(pil_image)
 	blurred = pil_image.filter(ImageFilter.BoxBlur(10))
-	py_text = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
-	py_text.set_alpha(192)
-	surfaceIntruderAlert.blit(py_text, (0, 0, 0, 0))
+	blurred = pygame.image.fromstring(blurred.tobytes(), blurred.size, blurred.mode)
+	blurred.set_alpha(192)
+	surfaceIntruderAlert.blit(blurred, (0, 0, 0, 0))
 	surfaceIntruderAlert.blit(surfaceIntruderAlertOver, (0, 0))
 
 	_.screen.blit(surfaceIntruderAlert, (0, 0))
