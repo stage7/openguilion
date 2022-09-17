@@ -6,15 +6,15 @@ import pygame
 surfaceLost = pygame.Surface((_.w, _.h), pygame.SRCALPHA, 32)
 
 # STATIC SCENE COMPOSITION
-imgLost = _.fontHelvGiant.render("LOST", True, (0, 0, 0)).convert_alpha()
+imgLost = _.fontHelvGiant.render("LOST", True, _.cBlack).convert_alpha()
 imgLost = pygame.transform.smoothscale(imgLost, (_.w - 100, _.h + 80))
 
 def lost(animTime):
-	_.screen.fill((0, 0, 0))
+	_.screen.fill(_.cBlack)
 	surfaceLost.fill((0, 0, 0, 0))
 
 	blinkTimeline = (animTime * 1000) % 750
-	pygame.draw.rect(surfaceLost, (255, 0, 0), (20, 20, _.w - 40, _.h - 40))
+	pygame.draw.rect(surfaceLost, _.cPureRed, (20, 20, _.w - 40, _.h - 40))
 	if blinkTimeline <= 375:
 		imgLost.set_alpha(255)
 	else:
